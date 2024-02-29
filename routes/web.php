@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Livewire\Counter;
+ use App\Http\Controllers\FormController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +18,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/livewire/counter', Counter::class);
+
+//.....form
+
+Route::get('/form', [FormController::class, 'index']);
+Route::post('/submit', [FormController::class, 'submit']);
