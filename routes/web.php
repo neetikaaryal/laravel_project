@@ -23,5 +23,5 @@ Route::get('/livewire/counter', Counter::class);
 
 //.....form
 
-Route::get('/form', [FormController::class, 'index']);
-Route::post('/submit', [FormController::class, 'submit']);
+Route::get('/portfolio', [FormController::class, 'index']);
+// Route::post('/submit', [FormController::class, 'submit']);
