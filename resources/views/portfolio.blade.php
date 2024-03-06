@@ -63,8 +63,8 @@
 						<div class="img mb-4" style="background-image: url(images/author.jpg);"></div>
 						<div class="desc">
 							<h2 class="subheading">Hello I'm</h2>
-							<h1 class="mb-4">{{ $user->name }}</h1>
-							<p class="mb-4">{{ $user->about }}</p>
+							<h1 class="mb-4">{{ $user[0]['name'] }}</h1>
+							<p class="mb-4">{{ $user[0]['about'] }}</p>
 							<p><a href="#" class="btn-custom">More About Me <span class="ion-ios-arrow-forward"></span></a></p>
 						</div>
 					</div>
@@ -197,7 +197,7 @@
     			</div>
     			<div class="col-md-4">
     				<div class="blog-entry ftco-animate">
-							<a href="#" class="img img-2" style="background-image: url({{ asset('images/image_5.jpg')}});"></a>
+							<a href="#" class="img img-2" style="background-image: url({{ asset('images/image_5.jpg') }});"></a>
 							<div class="text text-2 pt-2 mt-3">
 								<span class="category mb-3 d-block"><a href="#">Travel</a></span>
 	              <h3 class="mb-4"><a href="#">10 Most Awesome Beach in Asia</a></h3>
